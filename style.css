@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+span {
+    color: #E87E00;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.item {
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: .5s;
+}
+
+.item:hover {
+    background: #E87E00;
+    color: #fff;
+    box-shadow: 0 0 20px #DEDEDE;
+}
+
+.item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.item h3 {
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.see-more {
+    color: #666;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+
+
+/* Header */
+header {
+    background-color: #000000;
+    color: #E87E00;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+.logo h1 {
+    color: #E87E00;
+    font-size: 18px;
+}
+
+.nav-menu {}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    margin-top: 5%;
+}
+
+.nav-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 00;
+}
+
+.nav-menu ul li a:hover {
+    color: #E87E00;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #E87300;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    background: url('/img/hero.jpeg') no-repeat center bottom/cover;
+    color: white;
+    text-align: center;
+    padding: 5rem 3rem;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 4.5rem;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+}
+
+.cta-button {
+    background-color: #E87E00;
+    color: #000;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    margin-bottom: 3.5rem;
+}
+
+.cta-button:hover {
+    background-color: #000;
+    color: #E87E00;
+}
+
+/* News Section */
+.news {
+    padding: 2rem 0;
+}
+
+.news h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.news-item {
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: .5s;
+}
+
+.news-item:hover {
+    background: #E87E00;
+    color: #fff;
+    box-shadow: 0 0 20px #DEDEDE;
+}
+
+.news-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.news-item h3 {
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.news-item .see-more {
+    color: #666;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+/* Partidas */
+.matches {
+    padding: 2rem 0;
+}
+
+.match {
+    padding: 3rem;
+    box-shadow: 0 0 7px #8A8A8A;
+}
+
+.match p {
+    text-align: center;
+    opacity: 0.5;
+}
+
+.match h3 {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 5rem;
+}
+
+.match:hover {
+    box-shadow: 0 0 15px #8A8A8A;
+}
+
+.match:hover span {
+    color: #000;
+}
+
+.match:hover a {
+    color: #FFF;
+}
+
+/* Squad */
+.squad .team {
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+.squad .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.squad .player {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 1.2rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+    display: none;
+}
+
+.grid .player.show {
+    display: block;
+}
+
+.squad .player:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.squad .player h3 {
+    margin: 0.8rem 0 0.4rem;
+    font-size: 1.2rem;
+    color: #E87300;
+}
+
+.squad .player p {
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+    color: #f0f0f0;
+}
+
+.squad .btn {
+    display: flex;
+    justify-content: center;
+}
+
+.squad .btn .btn-see-all {
+    padding: 10px;
+    margin: 30px 0;
+    border: none;
+    background: none;
+}
+
+/* footer */
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 3rem 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer-section h4 {
+    margin-bottom: 1rem;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    line-height: 1.8;
+}
+
+.footer-section ul li a:hover {
+    color: #C57700;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .nav-menu ul {
+        display: none;
+        flex-direction: column;
+        background-color: #000000;
+        color: #E87300;
+        position: absolute;
+        top: 40px;
+        right: 0;
+        width: 70%;
+        padding: 3rem 1rem;
+        font-weight: normal;
+        font-size: 22px;
+        transition: 5s;
+    }
+    
+    .nav-menu ul li {
+        margin-bottom: 25px;
+        color: #E87300;
+    }
+    
+    .nav-menu ul.active {
+        display: flex;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .squad .grid {
+        grid-template-columns: 1fr;
+    }
+}
